@@ -33,7 +33,58 @@ To start the webserver, run:
 $ node server
 ```
 
-The server will be available in the browser at `http://localhost:1337`. Accessing the `/delegate/firebase` route requires an Auth0 access token.
+The server will be available in the browser at `http://localhost:1337`. Accessing the `/auth/firebase` route requires an Auth0 access token.
+
+## Endpoints
+
+### /auth/firebase
+
+This protected endpoint will return:
+
+```
+{
+  firebaseToken: {Custom Firebase Token object}
+}
+```
+
+### /api
+
+This unprotected endpoint simply returns
+
+```
+'API works!'
+```
+
+### /api/dogs
+
+This protected endpoint returns an array of the 10 most popular dogs in the US in 2016, ranked by the AKC. The data takes the following shape:
+
+```
+[
+  {
+    "breed": string,
+    "rank": number (1-10),
+    "description": string,
+    "group": string,
+    "image": string (URL to CC0 Creative Commons image)
+  },
+  { etc. }
+]
+```
+
+### /api/dog/:rank
+
+This protected endpoint returns a single dog object of the rank specified in the request parameters. The data takes the following shape:
+
+```
+{
+  "breed": string,
+  "rank": number (1-10),
+  "description": string,
+  "group": string,
+  "image": string (URL to CC0 Creative Commons image)
+}
+```
 
 ## License
 

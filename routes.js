@@ -25,19 +25,38 @@ module.exports = function(app, config) {
   });
 
   // GET Firebase token
-  app.get('/delegate/firebase', jwtCheck, (req, res) => {
+  app.get('/auth/firebase', jwtCheck, (req, res) => {
     const uid = `${req.user.sub}`;
     firebaseAdmin.auth().createCustomToken(uid)
       .then(customToken => {
         // Response must be JSON or Firebase errors
         res.json({firebaseToken: customToken});
       })
-      .catch(err => res.status(500).send('Something went wrong acquiring a Firebase token.'));
+      .catch(err => {
+        res.status(500).send({
+          message: 'Something went wrong acquiring a Firebase token.',
+          error: err
+        });
+      });
   });
+
+  // API
+  const dogs = require('./dogs.json');
 
   // GET API root
   app.get('/api/', (req, res) => {
     res.send('API works');
   });
 
+  // GET dogs (protected)
+  app.get('/api/dogs', jwtCheck, (req, res) => {
+    res.send(dogs);
+  });
+
+  // GET dog by rank
+  app.get('/api/dog/:rank', jwtCheck, (req, res) => {
+    const rank = req.params.rank * 1;
+    const thisDog = dogs.find(dog => dog.rank === rank);
+    res.send(thisDog);
+  });
 };
