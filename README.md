@@ -66,7 +66,8 @@ This protected endpoint returns an array of the 10 most popular dogs in the US i
     "rank": number (1-10),
     "description": string,
     "group": string,
-    "image": string (URL to CC0 Creative Commons image)
+    "image": string (URL to CC0 Creative Commons image),
+    "link": string (URL to AKC breed information)
   },
   { etc. }
 ]
@@ -82,7 +83,8 @@ This protected endpoint returns a single dog object of the rank specified in the
   "rank": number (1-10),
   "description": string,
   "group": string,
-  "image": string (URL to CC0 Creative Commons image)
+  "image": string (URL to CC0 Creative Commons image),
+  "link": string (URL to AKC breed information)
 }
 ```
 
