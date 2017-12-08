@@ -2,7 +2,9 @@
 
 This is an implementation of a Node server that enables authentication of [Firebase](https://firebase.google.com/) after a user has logged into an app with [Auth0](https://auth0.com).
 
-The user should log into Auth0 on the client. The client app should then call the secure `/delegate/firebase` endpoint to acquire a Firebase token, which can be used to securely access Firebase real-time databases in the client app.
+The user should log into Auth0 on the client. The client app should then call the secure `/auth/firebase` endpoint to acquire a Firebase token, which can be used to securely access Firebase real-time databases in the client app.
+
+(The proposed use of this server is to build an app that will display dog information and allow people to comment on the dog breeds in real-time using Firebase.)
 
 ## Dependencies
 
@@ -75,7 +77,7 @@ This protected endpoint returns an array of the 10 most popular dogs in the US i
 
 ### /api/dog/:rank
 
-This protected endpoint returns a single dog object of the rank specified in the request parameters. The data takes the following shape:
+This protected endpoint returns a single dog object of the `rank` specified in the request parameters. The data takes the following shape:
 
 ```
 {
