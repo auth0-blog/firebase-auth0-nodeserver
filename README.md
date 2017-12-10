@@ -25,7 +25,7 @@ Clone this repository and run:
 $ npm install
 ```
 
-Download the private key JSON file from your Firebase [Service Account](https://console.firebase.google.com/project/_/settings/serviceaccounts/adminsdk) to the server folder.
+Download the private key JSON file from your Firebase [Service Account](https://console.firebase.google.com/project/_/settings/serviceaccounts/adminsdk) to the `/firebase` folder.
 
 Remove the `.example` extension from the `config.js.example` file and add the appropriate configuration to the file.
 
