@@ -66,12 +66,9 @@ This protected endpoint returns an array of the 10 most popular dogs in the US i
   {
     "breed": string,
     "rank": number (1-10),
-    "description": string,
-    "group": string,
-    "image": string (URL to CC0 Creative Commons image),
-    "link": string (URL to AKC breed information)
+    "image": string (URL to CC0 Creative Commons image)
   },
-  { etc. }
+  ...
 ]
 ```
 

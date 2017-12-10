@@ -42,6 +42,19 @@ module.exports = function(app, config) {
 
   // API
   const dogs = require('./dogs.json');
+  const getDogsBasic = () => {
+    let dogsBasicArr = [];
+    dogs.forEach(dog => {
+      const newDog = {
+        rank: dog.rank,
+        breed: dog.breed,
+        image: dog.image
+      };
+      dogsBasicArr.push(newDog);
+    });
+    return dogsBasicArr;
+  }
+  const dogsBasic = getDogsBasic();
 
   // GET API root
   app.get('/api/', (req, res) => {
@@ -50,7 +63,7 @@ module.exports = function(app, config) {
 
   // GET dogs (protected)
   app.get('/api/dogs', jwtCheck, (req, res) => {
-    res.send(dogs);
+    res.send(dogsBasic);
   });
 
   // GET dog by rank
