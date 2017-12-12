@@ -39,7 +39,7 @@ The server will be available in the browser at `http://localhost:1337`. Accessin
 
 ## Endpoints
 
-### /auth/firebase
+### /auth/firebase (protected)
 
 This protected endpoint will return:
 
@@ -49,7 +49,7 @@ This protected endpoint will return:
 }
 ```
 
-### /api
+### /api (public)
 
 This unprotected endpoint simply returns
 
@@ -57,9 +57,9 @@ This unprotected endpoint simply returns
 'API works!'
 ```
 
-### /api/dogs
+### /api/dogs (public)
 
-This protected endpoint returns an array of the 10 most popular dogs in the US in 2016, ranked by the AKC. The data takes the following shape:
+This public endpoint returns an array of the 10 most popular dogs in the US in 2016, ranked by the AKC. The data takes the following shape:
 
 ```
 [
@@ -72,7 +72,7 @@ This protected endpoint returns an array of the 10 most popular dogs in the US i
 ]
 ```
 
-### /api/dog/:rank
+### /api/dog/:rank (protected)
 
 This protected endpoint returns a single dog object of the `rank` specified in the request parameters. The data takes the following shape:
 
