@@ -61,12 +61,12 @@ module.exports = function(app, config) {
     res.send('API works');
   });
 
-  // GET dogs (protected)
-  app.get('/api/dogs', jwtCheck, (req, res) => {
+  // GET dogs (public)
+  app.get('/api/dogs', (req, res) => {
     res.send(dogsBasic);
   });
 
-  // GET dog by rank
+  // GET dog by rank (private)
   app.get('/api/dog/:rank', jwtCheck, (req, res) => {
     const rank = req.params.rank * 1;
     const thisDog = dogs.find(dog => dog.rank === rank);
