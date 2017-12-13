@@ -25,7 +25,7 @@ Clone this repository and run:
 $ npm install
 ```
 
-Download the private key JSON file from your Firebase [Service Account](https://console.firebase.google.com/project/_/settings/serviceaccounts/adminsdk) to the `/firebase` folder.
+Download the private key JSON file from your Firebase [Service Account](https://console.firebase.google.com/project/_/settings/serviceaccounts/adminsdk) to this project's `/firebase` folder.
 
 Remove the `.example` extension from the `config.js.example` file and add the appropriate configuration to the file.
 
@@ -35,7 +35,7 @@ To start the webserver, run:
 $ node server
 ```
 
-The server will be available in the browser at `http://localhost:1337`. Accessing the `/auth/firebase` route requires an Auth0 access token.
+The server will be available in the browser at `http://localhost:1337`. Accessing the `/auth/firebase` route requires an Auth0 access token, acquired and sent as an `Authorization` header (`Bearer` type) by your client application with the HTTP request.
 
 ## Endpoints
 
@@ -51,7 +51,7 @@ This protected endpoint will return:
 
 ### /api (public)
 
-This unprotected endpoint simply returns
+This unprotected endpoint simply returns:
 
 ```
 'API works!'
@@ -81,6 +81,8 @@ This protected endpoint returns a single dog object of the `rank` specified in t
   "breed": string,
   "rank": number (1-10),
   "description": string,
+  "personality": string,
+  "energy": string,
   "group": string,
   "image": string (URL to CC0 Creative Commons image),
   "link": string (URL to AKC breed information)

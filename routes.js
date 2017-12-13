@@ -17,19 +17,19 @@ module.exports = function(app, config) {
     algorithm: 'RS256'
   });
 
-  // Initialize Firebase Admin
+  // Initialize Firebase Admin with service account
   const serviceAccount = require(config.FIREBASE_KEY);
   firebaseAdmin.initializeApp({
     credential: firebaseAdmin.credential.cert(serviceAccount),
     databaseURL: config.FIREBASE_DB
   });
 
-  // GET Firebase token
+  // GET Firebase token with UID from Auth0 user
   app.get('/auth/firebase', jwtCheck, (req, res) => {
     const uid = `${req.user.sub}`;
     firebaseAdmin.auth().createCustomToken(uid)
       .then(customToken => {
-        // Response must be JSON or Firebase errors
+        // Response must be an object or Firebase errors
         res.json({firebaseToken: customToken});
       })
       .catch(err => {
@@ -40,7 +40,7 @@ module.exports = function(app, config) {
       });
   });
 
-  // API
+  // Dogs API
   const dogs = require('./dogs.json');
   const getDogsBasic = () => {
     let dogsBasicArr = [];
@@ -66,7 +66,7 @@ module.exports = function(app, config) {
     res.send(dogsBasic);
   });
 
-  // GET dog by rank (private)
+  // GET dog details by rank (private)
   app.get('/api/dog/:rank', jwtCheck, (req, res) => {
     const rank = req.params.rank * 1;
     const thisDog = dogs.find(dog => dog.rank === rank);

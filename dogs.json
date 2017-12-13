@@ -3,6 +3,8 @@
     "breed": "Labrador Retriever",
     "rank": 1,
     "description": "The gentle, intelligent and family-friendly Labrador Retriever from Canada continues to be the most popular breed in the United States, according to AKC registration statistics. This versatile hunting breed comes in three colors - yellow, black and chocolate - and because of their desire to please their master they excel as guide dogs for the blind, as part of search-and-rescue teams or in narcotics detection with law enforcement.",
+    "personality": "Friendly and outgoing, Labs play well with others",
+    "energy": "Very Active; Labs are high-spirited and not afraid to show it.",
     "group": "Sporting",
     "image": "https://cdn.auth0.com/blog/firebase-auth0/labrador-retriever.jpg",
     "link": "http://www.akc.org/dog-breeds/labrador-retriever/"
@@ -11,6 +13,8 @@
     "breed": "German Shepherd Dog",
     "rank": 2,
     "description": "Generally considered dogdom's finest all-purpose workers, German Shepherd Dogs are large, agile, muscular dogs of noble spirit and high intelligence. For such deep-chested, solid dogs, they move quickly with great nimbleness afoot. The German Shepherd's natural gait is a free-and-easy trot, but when duty calls they can turn it up a notch or two and reach great speeds. Standing as high as 26 inches at the shoulder and built like a brick doghouse, the German Shepherd Dog when viewed in outline presents a picture of smooth, graceful curves rather than angles.",
+    "personality": "Smart, confident, courageous, and steady; a true dog lover's dog",
+    "energy": "Very Active; These big guys were born to work; they require regular mental and physical exercise.",
     "group": "Herding",
     "image": "https://cdn.auth0.com/blog/firebase-auth0/german-shepherd-dog.jpg",
     "link": "http://www.akc.org/dog-breeds/german-shepherd-dog/"
@@ -19,6 +23,8 @@
     "breed": "Golden Retriever",
     "rank": 3,
     "description": "It’s not surprising that Golden Retrievers are one of the most popular dog breeds in the United States. Along with being exuberant and friendly, they are strong dogs and hard workers. Goldens are good at whatever they do, be it hunting, serving as guide dogs, working search-and-rescue, or being devoted companions. Though they are serious about their work, they also enjoy being downright silly!",
+    "personality": "Intelligent, friendly, and devoted.",
+    "energy": "Very Active; This dog is active and energetic, and needs daily exercise.",
     "group": "Sporting",
     "image": "https://cdn.auth0.com/blog/firebase-auth0/golden-retriever.jpg",
     "link": "http://www.akc.org/dog-breeds/golden-retriever/"
@@ -27,6 +33,8 @@
     "breed": "Bulldog",
     "rank": 4,
     "description": "Known for their loose-jointed, shuffling gait and massive, short-faced head, the Bulldog is known to be equable, resolute and dignified. A medium-sized dog, they are not your typical lap dog, but would like to be! They are one of the most popular breeds according to AKC® Registration Statistics due to their lovable and gentle dispositions and adorable wrinkles. The Bulldog may be brindle, white, red, fawn, fallow or piebald.",
+    "personality": "Calm, courageous, and friendly; dignified but amusing.",
+    "energy": "Not Very Active; Bulldogs won't beg to be exercised, but they require regular walks and the occasional romp.",
     "group": "Non Sporting",
     "image": "https://cdn.auth0.com/blog/firebase-auth0/bulldog.jpg",
     "link": "http://www.akc.org/dog-breeds/bulldog/"
@@ -35,6 +43,8 @@
     "breed": "Beagle",
     "rank": 5,
     "description": "Not only are Beagles excellent hunting dogs and loyal companions, they are also happy-go-lucky, funny, and—thanks to their pleading expression—cute. They were bred to hunt in packs, so they enjoy the company of other dogs and of people as well. Beagles love to follow their noses, which can sometimes get them into sticky situations. These dogs are solid, sturdy, and fairly easy to care for, but they do need to run around and let off steam.",
+    "personality": "Merry, friendly, and curious",
+    "energy": "Very Active; This quick, energetic and compact hound dog needs plenty of exercise.",
     "group": "Hound",
     "image": "https://cdn.auth0.com/blog/firebase-auth0/beagle.jpg",
     "link": "http://www.akc.org/dog-breeds/beagle/"
@@ -43,6 +53,8 @@
     "breed": "French Bulldog",
     "rank": 6,
     "description": "This affectionate and playful breed—known for its wrinkly, smushy face and bat-like ears—is a great companion for single pet-owners as well as families with young children. They need little exercise and grooming and are incredibly loyal to their people. Because of their somewhat stubborn nature, they require a bit of patience during training but are incredibly intelligent and eager to please.",
+    "personality": "Playful, smart, adaptable, and completely irresistible",
+    "energy": "Not Very Active; Frenchies are easygoing, not terribly athletic; brisk walks will keep them trim.",
     "group": "Non Sporting",
     "image": "https://cdn.auth0.com/blog/firebase-auth0/french-bulldog.jpg",
     "link": "http://www.akc.org/dog-breeds/french-bulldog/"
@@ -51,6 +63,8 @@
     "breed": "Poodle",
     "rank": 7,
     "description": "The Poodle, though often equated to the beauty with no brains, is exceptionally smart, active and excels in obedience training. The breed comes in three size varieties, which may contribute to why Poodle is one of the most popular breeds according to AKC® Registration statistics. Poodles can be a variety of solid colors, including white, black, apricot and gray, but never parti-colored.",
+    "personality": "Proud, active and very smart.",
+    "energy": "Very Active; Poodles are enthusiastic walkers, runners, and swimmers. They're eager for all kinds of activity, and they enjoy keeping busy.",
     "group": "Non Sporting",
     "image": "https://cdn.auth0.com/blog/firebase-auth0/poodle.jpg",
     "link": "http://www.akc.org/dog-breeds/poodle/"
@@ -59,6 +73,8 @@
     "breed": "Rottweiler",
     "rank": 8,
     "description": "Robust and powerful, the Rottweiler is happiest when given a job to perform. His intelligence, endurance and willingness to work make him suitable as a police dog, herder, service dog, therapy dog, obedience competitor and devoted companion. An inherent protector, the Rottweiler is self-confident and responds quietly and with a wait-and-see attitude to influences in his environment. He must be medium in size and his coat is black with rust to mahogany markings.",
+    "personality": "Reserved with strangers and affectionate and loyal with his family.",
+    "energy": "The Rottie needs at least two solid workouts daily; he would really appreciate it if these always included you! ",
     "group": "Working",
     "image": "https://cdn.auth0.com/blog/firebase-auth0/rottweiler.jpg",
     "link": "http://www.akc.org/dog-breeds/rottweiler/"
@@ -67,6 +83,8 @@
     "breed": "Yorkshire Terrier",
     "rank": 9,
     "description": "Yorkshire Terriers, affectionately known as \"Yorkies,\" offer big personalities in a small package. Though members of the Toy Group, they are terriers by nature and are brave, determined, investigative and energetic. Named for the English county from which they originally hail, Yorkshire Terriers were used in the nineteenth century to catch rats in clothing mills. Surprisingly enough, in its beginnings, the Yorkie belonged to the working class, especially the weavers; in fact, facetious comments were often made about how the dogs' fine, silky coats were the ultimate product of the looms. Eventually, the breed left the workforce and became a companion animal to families of European high society.",
+    "personality": "Sprightly, tomboyish, and affectionate",
+    "energy": "Somewhat Active; Yorkies are moderately active and will be happy with a daily satisfying walk.",
     "group": "Toy",
     "image": "https://cdn.auth0.com/blog/firebase-auth0/yorkshire-terrier.jpg",
     "link": "http://www.akc.org/dog-breeds/yorkshire-terrier/"
@@ -75,6 +93,8 @@
     "breed": "Boxer",
     "rank": 10,
     "description": "A well-conditioned Boxer is an awesome sight. A male can stand as high as 25 inches at the shoulder, females a little shorter. Their muscles ripple beneath their short, tight-fitting coat. The dark brown eyes and wrinkled forehead give the face an alert, curious look. Boxers move like the athletes they’re named for: smooth and graceful, but powerful. The coat can be fawn (tan to mahogany-red) or brindle (kind of like tiger stripes), with white markings.",
+    "personality": "Fun-loving, bright, active and loyal",
+    "energy": "Very Active; Boxers are strong, quick, busy dogs who need plenty of exercise; they enjoy challenges, both physical and mental.",
     "group": "Working",
     "image": "https://cdn.auth0.com/blog/firebase-auth0/boxer.jpg",
     "link": "http://www.akc.org/dog-breeds/boxer/"

@@ -1,6 +1,6 @@
 module.exports = {
-  AUTH0_DOMAIN: '[Auth0 Domain]', // e.g., you.auth0.com
-  AUTH0_API_AUDIENCE: '[Auth0 API Audience]', // e.g., http://localhost:1337/
-  FIREBASE_KEY: './firebase/[Firebase Key Filename].json',
-  FIREBASE_DB: '[Firebase Database URL]' // e.g., https://your-project.firebaseio.com
+  AUTH0_DOMAIN: '<Auth0 Domain>', // e.g., you.auth0.com
+  AUTH0_API_AUDIENCE: '<Auth0 API Audience>', // e.g., http://localhost:1337/
+  FIREBASE_KEY: './firebase/<Firebase Key Filename>',
+  FIREBASE_DB: '<Firebase Database URL>' // e.g., https://your-project.firebaseio.com
 };
