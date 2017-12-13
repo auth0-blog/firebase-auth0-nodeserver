@@ -2,8 +2,6 @@
 const express = require('express');
 const bodyParser = require('body-parser');
 const cors = require('cors');
-// Config
-const config = require('./config');
 
 // App
 const app = express();
@@ -16,7 +14,7 @@ const port = process.env.PORT || '1337';
 app.set('port', port);
 
 // Routes
-require('./routes')(app, config);
+require('./routes')(app);
 
 // Server
 app.listen(port, () => console.log(`Server running on localhost:${port}`));

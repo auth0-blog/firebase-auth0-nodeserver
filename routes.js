@@ -2,8 +2,10 @@
 const jwt = require('express-jwt');
 const jwks = require('jwks-rsa');
 const firebaseAdmin = require('firebase-admin');
+// Config
+const config = require('./config');
 
-module.exports = function(app, config) {
+module.exports = function(app) {
   // Auth0 athentication middleware
   const jwtCheck = jwt({
     secret: jwks.expressJwtSecret({
@@ -40,7 +42,7 @@ module.exports = function(app, config) {
       });
   });
 
-  // Dogs API
+  // Set up dogs JSON data for API
   const dogs = require('./dogs.json');
   const getDogsBasic = () => {
     let dogsBasicArr = [];
@@ -55,11 +57,6 @@ module.exports = function(app, config) {
     return dogsBasicArr;
   }
   const dogsBasic = getDogsBasic();
-
-  // GET API root
-  app.get('/api/', (req, res) => {
-    res.send('API works');
-  });
 
   // GET dogs (public)
   app.get('/api/dogs', (req, res) => {

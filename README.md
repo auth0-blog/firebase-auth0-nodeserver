@@ -49,14 +49,6 @@ This protected endpoint will return:
 }
 ```
 
-### /api (public)
-
-This unprotected endpoint simply returns:
-
-```
-'API works!'
-```
-
 ### /api/dogs (public)
 
 This public endpoint returns an array of the 10 most popular dogs in the US in 2016, ranked by the AKC. The data takes the following shape:
