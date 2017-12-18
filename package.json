@@ -2,13 +2,13 @@
   "name": "firebase-auth0-nodeserver",
   "version": "0.0.1",
   "description": "Node.js server that authenticates with an Auth0 access token and returns a Firebase auth token.",
-  "repository": "https://github.com/kmaida/firebase-auth0-nodeserver",
+  "repository": "https://github.com/auth0-blog/firebase-auth0-nodeserver",
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node server"
   },
-  "author": "Kim Maida",
+  "author": "Kim Maida for Auth0",
   "license": "MIT",
   "dependencies": {
     "body-parser": "^1.18.2",
