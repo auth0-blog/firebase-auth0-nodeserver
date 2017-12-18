@@ -26,9 +26,11 @@ module.exports = function(app) {
     databaseURL: config.FIREBASE_DB
   });
 
-  // GET Firebase token with UID from Auth0 user
+  // GET object containing Firebase custom token
   app.get('/auth/firebase', jwtCheck, (req, res) => {
-    const uid = `${req.user.sub}`;
+    // Create UID from authenticated Auth0 user
+    const uid = req.user.sub;
+    // Mint token using Firebase Admin SDK
     firebaseAdmin.auth().createCustomToken(uid)
       .then(customToken => {
         // Response must be an object or Firebase errors
