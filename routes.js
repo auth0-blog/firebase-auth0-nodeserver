@@ -47,22 +47,19 @@ module.exports = function(app) {
   // Set up dogs JSON data for API
   const dogs = require('./dogs.json');
   const getDogsBasic = () => {
-    let dogsBasicArr = [];
-    dogs.forEach(dog => {
-      const newDog = {
+    const dogsBasicArr = dogs.map(dog => {
+      return {
         rank: dog.rank,
         breed: dog.breed,
         image: dog.image
-      };
-      dogsBasicArr.push(newDog);
+      }
     });
     return dogsBasicArr;
   }
-  const dogsBasic = getDogsBasic();
 
   // GET dogs (public)
   app.get('/api/dogs', (req, res) => {
-    res.send(dogsBasic);
+    res.send(getDogsBasic());
   });
 
   // GET dog details by rank (private)
