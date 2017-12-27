@@ -32,16 +32,16 @@ module.exports = function(app) {
     const uid = req.user.sub;
     // Mint token using Firebase Admin SDK
     firebaseAdmin.auth().createCustomToken(uid)
-      .then(customToken => {
+      .then(customToken => 
         // Response must be an object or Firebase errors
-        res.json({firebaseToken: customToken});
-      })
-      .catch(err => {
+        res.json({firebaseToken: customToken})
+      )
+      .catch(err => 
         res.status(500).send({
           message: 'Something went wrong acquiring a Firebase token.',
           error: err
-        });
-      });
+        })
+      );
   });
 
   // Set up dogs JSON data for API
