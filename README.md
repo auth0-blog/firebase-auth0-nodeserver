@@ -1,6 +1,6 @@
 # Node.js Firebase + Auth0 Authentication Server
 
-> Follow the tutorial to learn how to authenticate a Node.js server and Angular app with Cloud Firestore database: [How to Authenticate Firebase and Angular with Auth0](https://auth0.com/blog/how-to-authenticate-firebase-and-angular-with-auth0-part-1/).
+> Follow this tutorial to learn how to authenticate a Node.js server and Angular app with Cloud Firestore database using Auth0: [How to Authenticate Firebase and Angular with Auth0](https://auth0.com/blog/how-to-authenticate-firebase-and-angular-with-auth0-part-1/).
 
 This is an implementation of a Node server that enables authentication of [Firebase](https://firebase.google.com/) after a user has logged into an app with [Auth0](https://auth0.com).
 
